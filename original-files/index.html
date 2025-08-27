@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everydays - Digital Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">EVERYDAYS</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <h1 class="hero-title">Digital Art Collection</h1>
+                <p class="hero-description">Explore a curated collection of digital artworks created daily</p>
+                <button class="cta-button" onclick="scrollToGallery()">View Gallery</button>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="gallery-container">
+                <h2 class="section-title">Everydays Gallery</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="recent">Recent</button>
+                    <button class="filter-btn" data-filter="popular">Popular</button>
+                </div>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="load-more">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2 class="section-title">About Everydays</h2>
+                <p class="about-text">
+                    A digital art project showcasing creative works produced daily. 
+                    Each piece represents a moment in time, capturing artistic evolution and experimentation.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="artwork-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" id="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-date" id="modal-date"></p>
+                <p class="modal-description" id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; ©2025 CryptoPatrick. All rights reserved.
+
+                #100DaysOfVibe</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
