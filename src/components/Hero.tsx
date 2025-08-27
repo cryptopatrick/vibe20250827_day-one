@@ -10,11 +10,11 @@ const Hero: React.FC = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background-light/80 to-gray-200/80 dark:from-background/80 dark:to-primary/80 backdrop-blur-sm relative">
       <div className="text-center max-w-4xl px-8 w-full">
 
-        <h1 className="text-6xl md:text-8xl font-inter font-bold mb-4 opacity-0 animate-fadeInUp text-text-light dark:text-text leading-tight text-center mx-auto w-full" 
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-inter font-bold mb-4 opacity-0 animate-fadeInUp text-text-light dark:text-text leading-tight text-center mx-auto w-full" 
             style={{ animationDelay: '0.15s' }}>
           I'm doing #100DaysOfVibe
         </h1>
-        <p className="text-xl text-text-secondary-light dark:text-text-secondary mb-8 opacity-0 animate-fadeInUp" 
+        <p className="text-base sm:text-lg md:text-xl text-text-secondary-light dark:text-text-secondary mb-8 opacity-0 animate-fadeInUp" 
            style={{ animationDelay: '0.7s' }}>
          <b>Rules:</b><br/>
         1. Create one vibe coded program every day
